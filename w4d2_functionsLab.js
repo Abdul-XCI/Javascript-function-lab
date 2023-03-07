@@ -42,18 +42,19 @@ getLastElement(['a', 'b', 'c']);          // 'c'
 getLastElement([[1, 2, 3], [4, 5, 6]]);   // [4, 5, 6]
 
 
-// Extra challeneg for PART 2
-const makeSentence2 =  function (arr){
-  let conSentence = ''
-  for (let i = 0; i < arr.length; i++){
-    conSentence += arr[i]
-    if(i < arr.length -1){
-      conSentence += " ";
+// Extra challenge for PART 2
+//Trying Part 2 where num of arguments is unknown
+
+const makeSentence3 =  function (...arr){
+    let conSentence2 = ''
+    for (let i = 0; i < arr.length; i++){
+      conSentence2 += arr[i]
+      if(i < arr.length -1){
+        conSentence2 += " ";
+      }
     }
+   console.log(conSentence2);
   }
-  console.log(conSentence);
-}
-
-// invoking the function
-makeSentence2(['Oh', 'boy', 'do', 'I', 'want', 'chimichangas', 'or', 'what', '?']);
-
+  
+  // invoking the function
+makeSentence3('Oh', 'boy', 'do', 'I', 'want', 'chimichangas', 'or', 'YES', '?');
