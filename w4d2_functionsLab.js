@@ -20,7 +20,8 @@ console.log('Part 2 - makeSentence()\n');
 
 // the following function concatenates the parameters into a sentence.
 const makeSentence = function (string1, string2, string3){
-  console.log(`   Oh boy, do ${string1} ${string2} ${string3} or what?`);
+  //console.log(`   Oh boy, do ${string1} ${string2} ${string3} or what?`);
+  console.log("Oh boy..., do " + string1 + " " + string2 + " " + string3 + " or what?");
   
 }
 
@@ -30,7 +31,6 @@ makeSentence('I', 'want', 'chimichangas');
 
 console.log("\n");
 console.log('Part 2 - getLastElement()\n');
-
 // the following takes an array and prints its last element
 function getLastElement(arr){
    console.log(`Last element of [${arr}] is ${arr[arr.length - 1]}.`);
@@ -44,7 +44,8 @@ getLastElement([[1, 2, 3], [4, 5, 6]]);   // [4, 5, 6]
 
 // Extra challenge for PART 2
 //Trying Part 2 where num of arguments is unknown
-
+console.log("\n");
+console.log("Part 3 - makeSentence() - Extra challnege.\n");
 const makeSentence3 =  function (...arr){
     let conSentence2 = ''
     for (let i = 0; i < arr.length; i++){
